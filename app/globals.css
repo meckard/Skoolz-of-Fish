@@ -1,0 +1,10 @@
+:root {
+  --dark-blue:#223667;
+  --light-text: #f4f6fb;
+  --button-blue: #4f70c4;
+}
+
+body {
+  margin: 0;
+  background-color: var(--light-text);
+}
