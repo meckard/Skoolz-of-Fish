@@ -1,26 +1,49 @@
-
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: auto;
+  background-color: var(--dark-blue);
+}
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  justify-content: center;
   background-color: var(--dark-blue);
   color: var(--light-text);
   font-weight: bold;
   font-size: 1.4rem;
   height: 15vh;
-  width: 100vw;
+  width: 100%;
+}
+
+.navbar .navElements {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
 }
 
 .navbar ul {
   display: flex;
   list-style-type: none;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  text-decoration: none;
 }
 
 .navbar li {
   background-color: var(--button-blue);
   border-radius: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  color: var(--light-text)
+}
+
+.navbar li:hover {
+  box-shadow: 3px 3px 3px var(--light-text);
+}
+
+.navbar a {
+  text-decoration: none;
 }
 
 .navbar p {
@@ -35,61 +58,42 @@
 }
 
 .main {
+ color: var(--dark-blue);
+ height: 85vh;
+ display: flex;
+ justify-content: center;
+}
+
+.title {
+  border: 2px solid var(--dark-blue);
+  height: auto;
+  width: 960px;
+  margin-top: 15vh;
+  border-radius: 5px;
   display: flex;
-  justify-content: center;
+  text-align: center;
+  flex-direction: column;
   align-items: center;
-  height: 85vh;
-  width: 85bw;
+  justify-content: space-between;
+  color: var(--light-text);
+  background-color: var(--button-blue);
 }
 
-.tank {
-  border-width: 5px 30px 30px 30px;
-  border-style: solid;
-  border-color: black;
-  height:70vh;
-  width: 70vw;
-  display: flex;
-  align-items: end;
-  background: linear-gradient(0.25turn, gray, white, gray);
+.title h1 {
+  z-index: 5;
+  position: relative;
+  font-size: 4rem;
 }
 
-.water {
-  background: radial-gradient(#f4f6fb, #4f70c4);
-  height: 95%;
-  width: 100%;
-  text-align: end;
+.title h2 {
+  z-index: 5;
+  position: relative;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.4rem;
 }
 
-.fish1 {
-  height: 100px;
-  width: 200px;
-}
-
-.fishBody {
-  background-color: orange;
-  height: 100%;
-  width: 70%;
-  border-radius: 50%;
-}
-
-.fishFin1 {
-  height: 30%;
-  width: 30%;
-  background-color: orange;
-  position:relative;
-  bottom: 90px;
-  left: 120px;
-  rotate: -20deg;
-  border-radius: 50%;
-}
-
-.fishFin2 {
-  height: 30%;
-  width: 30%;
-  background-color: orange;
-  position:relative;
-  bottom: 85px;
-  left: 120px;
-  rotate: 20deg;
-  border-radius: 50%;
+.tetra {
+  position: fixed;
+  width: auto;
+  height: auto;
 }
