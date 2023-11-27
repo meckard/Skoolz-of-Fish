@@ -1,6 +1,8 @@
 import { Pacifico } from 'next/font/google'
 import './globals.css'
 import Navbar from './Components/nav'
+import AboutBlurb from './Components/aboutblurb'
+import Footer from './Components/footer'
 
 const pacifico = Pacifico({ 
   subsets: ['latin'],
@@ -17,6 +19,7 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   )

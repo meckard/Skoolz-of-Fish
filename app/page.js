@@ -1,6 +1,8 @@
 import styles from './page.module.css'
 import Image from 'next/image'
 import tetrapainting from './Resources/Images/Tetra-Oil-Painting.png'
+import AboutBlurb from './Components/aboutblurb'
+import FPgallery from './Components/gallery'
 
 export default function Home() {
   return (
@@ -12,8 +14,10 @@ export default function Home() {
         className={styles.tetra}
         alt='an oil painting of a neon tetra'/>
         <h1>Skoolz of Fish</h1>
-        <h2>Richmond's premiere discount freshwater fish and supplies</h2>
+        <h2>Discount Freshwater Fish and Accesories</h2>
       </div>
+      <AboutBlurb/>
+      <FPgallery/>
     </main>
   )
 }
