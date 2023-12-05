@@ -33,7 +33,6 @@
 .navbar li {
   background-color: var(--button-blue);
   border-radius: 5px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-decoration: none;
   color: var(--light-text)
 }
@@ -90,7 +89,6 @@
 .title h2 {
   z-index: 5;
   position: relative;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.5rem;
 }
 
@@ -126,7 +124,6 @@
 
 .AboutBlurb p {
   font-size: 1.5rem;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .gallery {
@@ -150,7 +147,6 @@
   text-align: center;
   color: var(--light-text);
   font-size: 2rem;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .galleryh3 {
@@ -171,17 +167,23 @@
 }
 
 .footer h3 {
-  padding: 30px;
+  padding: 20px;
   margin: 0;
   margin-left: 10px;
+  font-size: 1.5rem;
 }
 
 .footerInfo {
   display: grid;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   justify-items: left;
   align-items: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  line-height: 1.75rem;
+}
+
+.hours {
+  grid-row: 1 / span 2;
 }
 
 .footerInfo ul {
@@ -191,5 +193,5 @@
 .designer {
   margin: 0;
   margin-left: 10px;
-  padding: 30px;
+  padding: 20px;
 }

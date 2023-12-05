@@ -1,11 +1,12 @@
 import { fishArray } from "../Resources/FishPictureArray"
 import Image from "next/image"
 import styles from '../page.module.css'
+import { pacifico } from "../layout"
 
 export default function FPgallery () {
     return (
         <div>
-        <h3 className={styles.galleryh3}>Some of our Fish</h3>
+        <h3 className={styles.galleryh3 + ' ' + pacifico.className}>Some of our Fish</h3>
         <section className={styles.gallery}>
             {fishArray.map(fish => {
                 return(

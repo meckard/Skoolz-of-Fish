@@ -4,7 +4,7 @@ import Navbar from './Components/nav'
 import AboutBlurb from './Components/aboutblurb'
 import Footer from './Components/footer'
 
-const pacifico = Pacifico({ 
+export const pacifico = Pacifico({ 
   subsets: ['latin'],
   weight: '400' })
 
@@ -15,7 +15,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={pacifico.className}>
+    <html lang="en" >
       <body>
         <Navbar/>
         {children}
