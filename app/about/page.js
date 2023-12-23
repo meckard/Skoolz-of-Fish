@@ -1,14 +1,35 @@
 import styles from '../page.module.css'
 import { pacifico } from '../layout'
+import goldfish from '../Resources/Images/goldfish2.png'
+import Image from 'next/image'
+
 
 export default function About () {
     return (
         <div className={styles.about}>
-            <h2 className={pacifico.className}>About Us</h2>
-            <div className={styles.whoWeAre}>
-                <h3>Who we are</h3>
+            <section className={styles.aboutHeader}>
+            <h1>About Us</h1>
+            <p>Skoolz of Fish is a premier store for exotic freshwater fish. We are passionate about fish and committed to their conservation.</p>
+            </section>
+            <Image
+            src={goldfish}
+            width={800}
+            height={800}
+            alt="a tank of goldfish"
+            className={styles.goldfish}
+            />
+            <section className={styles.mission}>
+                <h3 className={pacifico.className}>Our Mission</h3>
                 <p>
-                Skoolz of Fish was brought to fruition from its founder Rama Sabbakhan.  Rama had high expectations when it came to aquaria.  
+                Our mission here at Skoolz of Fish is to not just provide top-notch aquarium services but also to teach conservation.
+                We've always been enamored with wildlife and dove headfirst into the aquarist hobby. 
+                We want to promote the wonders of keeping a beautiful thriving aquarium, but also teach the importance of cherishing these live specimens all around the world.
+                </p>
+            </section>
+            <section className={styles.whoWeAre}>
+                <h3 className={pacifico.className}>Who we are</h3>
+                <p>
+                Skoolz of Fish was brought to fruition by its founder Rama Sabbakhan.  Rama had high expectations when it came to aquaria.  
                 Not only did he want his fish to be of high quality, but that the service that was provided with those fish just as important.  
                 Our core beliefs in Value, Knowledge, and Service define who we are and what we want our business to represent.  
                 We seek to live out these ideals whether you are a first time customer in our store, or sending us a message online.
@@ -18,17 +39,9 @@ export default function About () {
                     with that space, we have the ability to cut out any middlemen and make sure that our prices are as good as possible.
                     We also make sure that our staff is friendly, knowledgable, and willing to go the extra mile to serve you.
                 </p>
-            </div>
-            <div className={styles.mission}>
-                <h3>Our Mission</h3>
-                <p>
-                Our mission here at Skoolz of Fish is to not just provide top-notch aquarium services but also to teach conservation.
-                We've always been enamored with wildlife and dove headfirst into the aquarist hobby. 
-                We want to promote the wonders of keeping a beautiful thriving aquarium, but also teach the importance of cherishing these live specimens all around the world.
-                </p>
-            </div>
-            <div className={styles.faqs}>
-                <h3>FAQs</h3>
+            </section>
+            {/* <details className={styles.faqs}>
+                <summary className={pacifico.className}>FAQs</summary>
                 <div className={styles.question}>
                     <h4>What is your return policy?</h4>
                     <p>
@@ -68,7 +81,7 @@ export default function About () {
                         We love not only supplying the exotic community, but being a part of it as well!
                     </p>
                 </div>
-            </div>
+            </details> */}
         </div>
     )
 }

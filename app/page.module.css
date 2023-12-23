@@ -8,7 +8,7 @@
 }
 
 .navbar {
-  display: grid;
+  display: flex;
   justify-content: center;
   background-color: var(--dark-blue);
   color: var(--light-text);
@@ -21,7 +21,7 @@
 .navbar .navElements {
   display: flex;
   justify-content: space-between;
-  width: 960px;
+  width: 100%;
 }
 
 .navbar ul {
@@ -64,11 +64,9 @@
 }
 
 .title {
-  border: 2px solid var(--dark-blue);
   height: 500px;
-  width: 960px;
+  width: 100%;
   margin-top: 5%;
-  border-radius: 5px;
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -78,12 +76,16 @@
   background: linear-gradient(var(--light-text), var(--button-blue));
   overflow: hidden;
   padding-bottom: 0;
+  background-image: url('./Resources/Images/1702000848236i8wcg55h.png');
+  background-size: cover;
+  text-shadow: 2px 2px 2px black;
 }
 
 .title h1 {
   z-index: 5;
   position: relative;
-  font-size: 2.75rem;
+  font-size: 5rem;
+  margin: 20px auto;
 }
 
 .title h2 {
@@ -194,4 +196,91 @@
   margin: 0;
   margin-left: 10px;
   padding: 20px;
+}
+
+.aboutHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--light-text);
+  color: var(--dark-blue);
+}
+
+.aboutHeader h1 {
+  font-size: 4rem;
+  margin: 0 auto;
+  max-width: 40%;
+}
+
+.aboutHeader p {
+  max-width: 40%;
+  margin: 0 auto;
+  height: 100px;
+}
+
+.about section {
+  padding: 20px;
+  margin: 100px 0;
+  line-height: 2.25rem;
+  font-size: 1.25rem;
+}
+
+.whoWeAre {
+  text-align: right;
+}
+
+.whoWeAre p {
+  margin: 20px 0;
+}
+
+.about .mission {
+  max-width: 100%;
+  background-color: var(--button-blue);
+  color: var(--light-text)
+}
+
+.about h3, .about p {
+  margin: 20px 5%;
+}
+
+.goldfish {
+  width: 90%;
+  height: 800px;
+  margin: 0 5%;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.whoWeAre {
+  color: var(--dark-blue)
+}
+
+.question {
+  height: auto;
+  width: 90%;
+  margin: auto 5%;
+  border: 2px solid var(--button-blue);
+  border-radius: 5px;
+  line-height: 1.5;
+  background-color: var(--light-text);
+}
+
+.question h2 {
+  background-color: var(--dark-blue);
+  color: var(--light-text);
+  padding: 20px;
+  margin: 0;
+}
+
+.question p {
+  padding: 20px;
+  color: var(--dark-blue);
+  margin: 0;
+  font-size: 1.25rem;
+  background-color: white;
+}
+
+.faq h1 {
+  margin: 30px 5%;
+  color: var(--dark-blue);
 }
