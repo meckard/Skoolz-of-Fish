@@ -56,6 +56,14 @@
   margin: 10px;
 }
 
+.fishIcon {
+  justify-self: center;
+  align-self: center;
+  margin-left: 50px;
+  height: 50px;
+  width: 50px;
+}
+
 .main {
  color: var(--dark-blue);
  display: flex;
@@ -111,7 +119,7 @@
 
 .AboutBlurb {
   margin: 50px;
-  width: 940px;
+  width: 90%;
   border: 2px solid var(--dark-blue);
   border-radius: 5px;
   padding: 10px;
@@ -126,6 +134,7 @@
 
 .AboutBlurb p {
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .gallery {
@@ -283,4 +292,36 @@
 .faq h1 {
   margin: 30px 5%;
   color: var(--dark-blue);
+}
+
+.contactUs {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: column;
+  height: 400px;
+  width: 40%;
+}
+
+.contactUs form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  width: 80%;
+}
+
+.contactUs input {
+  height: 30px;
+  width: 100%;
+  border-radius: 10px;
+  border-color: lightgrey;
+  border-style: solid;
+}
+
+.contactUs textarea {
+  height: 60px;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px inset light lightgrey
 }
