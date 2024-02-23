@@ -165,7 +165,9 @@
 }
 
 .footer {
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
   background-color: var(--dark-blue);
   color: var(--light-text);
   font-weight: bold;
@@ -173,7 +175,6 @@
   height: 100%;
   width: 100%;
   margin-top: 50px;
-  align-items: center;
   font-size: 1rem;
 }
 
@@ -193,8 +194,27 @@
   line-height: 1.75rem;
 }
 
+.social {
+  margin: 20px;
+}
+
+.miniNav ul {
+  list-style-type: none;
+}
+
+.miniNav li {
+  color: var(--light-text);
+  text-decoration: none;
+  margin: 10px;
+}
+
 .hours {
   grid-row: 1 / span 2;
+  margin: 20px 40px;
+}
+
+.hour {
+  padding: 5px;
 }
 
 .footerInfo ul {
@@ -294,13 +314,25 @@
   color: var(--dark-blue);
 }
 
+.contactPage {
+  display: flex;
+  justify-content: center;
+}
+
 .contactUs {
   display: flex;
-  align-items: center;
   justify-content: left;
+  align-items: center;
   flex-direction: column;
   height: 400px;
-  width: 40%;
+  width: 45%;
+  border: 2px solid var(--button-blue);
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.contactUs h2 {
+  color: var(--dark-blue)
 }
 
 .contactUs form {
@@ -317,11 +349,63 @@
   border-radius: 10px;
   border-color: lightgrey;
   border-style: solid;
+  padding: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contactUs input::placeholder{
+  color: var(--dark-blue);
 }
 
 .contactUs textarea {
   height: 60px;
   width: 100%;
   border-radius: 10px;
-  border: 2px inset light lightgrey
+  border: 2px solid lightgrey;
+  resize: none;
+  font-size: 15px;
+  padding: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contactUs textarea::placeholder {
+  color: var(--dark-blue);
+}
+
+.contactForm button {
+  background-color: var(--button-blue);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  width: 100%;
+}
+
+.storeInfo {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 45%;
+  border: 2px solid var(--button-blue);
+  border-radius: 5px;
+  margin: 20px;
+  font-weight: bold;
+  color: var(--dark-blue);
+}
+
+.storeInfo h2 {
+  text-align: center;
+}
+
+.storeInfo p {
+  margin: 20px 40px;
+}
+
+.storeInfo ul {
+  padding: 0;
+}
+
+.storeInfo li {
+  list-style-type: none;
 }
