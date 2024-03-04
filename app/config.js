@@ -1,2 +1,1 @@
-
-export const AK = process.env.CONTACT_FORM
+export const AK = process.env.CONTACT_FORM;

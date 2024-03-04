@@ -1,411 +1,412 @@
 .body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: auto;
-  background-color: var(--dark-blue);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: auto;
+	background-color: var(--dark-blue);
 }
 
 .navbar {
-  display: flex;
-  justify-content: center;
-  background-color: var(--dark-blue);
-  color: var(--light-text);
-  font-weight: bold;
-  font-size: 1.4rem;
-  height: 15vh;
-  width: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: var(--dark-blue);
+	color: var(--light-text);
+	font-weight: bold;
+	font-size: 1.4rem;
+	height: 15vh;
+	width: 100%;
 }
 
 .navbar .navElements {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
 }
 
 .navbar ul {
-  display: flex;
-  list-style-type: none;
-  text-decoration: none;
+	display: flex;
+	list-style-type: none;
+	text-decoration: none;
 }
 
 .navbar li {
-  background-color: var(--button-blue);
-  border-radius: 5px;
-  text-decoration: none;
-  color: var(--light-text)
+	background-color: var(--button-blue);
+	border-radius: 5px;
+	text-decoration: none;
+	color: var(--light-text);
 }
 
 .navbar li:hover {
-  box-shadow: 3px 3px 3px var(--light-text);
+	box-shadow: 3px 3px 3px var(--light-text);
 }
 
 .navbar a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .navbar p {
-  margin: 10px;
-  padding: 10px;
-  font-size: 2rem;
+	margin: 10px;
+	padding: 10px;
+	font-size: 2rem;
 }
 
 .navbar li {
-  padding: 10px;
-  margin: 10px;
+	padding: 10px;
+	margin: 10px;
 }
 
 .fishIcon {
-  justify-self: center;
-  align-self: center;
-  margin-left: 50px;
-  height: 50px;
-  width: 50px;
+	justify-self: center;
+	align-self: center;
+	margin-left: 50px;
+	height: 50px;
+	width: 50px;
 }
 
 .main {
- color: var(--dark-blue);
- display: flex;
- flex-direction: column;
- align-items: center;
+	color: var(--dark-blue);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .title {
-  height: 500px;
-  width: 100%;
-  margin-top: 5%;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  color: var(--light-text);
-  background: linear-gradient(var(--light-text), var(--button-blue));
-  overflow: hidden;
-  padding-bottom: 0;
-  background-image: url('./Resources/Images/1702000848236i8wcg55h.png');
-  background-size: cover;
-  text-shadow: 2px 2px 2px black;
+	height: 500px;
+	width: 100%;
+	margin-top: 5%;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	color: var(--light-text);
+	background: linear-gradient(var(--light-text), var(--button-blue));
+	overflow: hidden;
+	padding-bottom: 0;
+	background-image: url("./Resources/Images/1702000848236i8wcg55h.png");
+	background-size: cover;
+	text-shadow: 2px 2px 2px black;
 }
 
 .title h1 {
-  z-index: 5;
-  position: relative;
-  font-size: 5rem;
-  margin: 20px auto;
+	z-index: 5;
+	position: relative;
+	font-size: 5rem;
+	margin: 20px auto;
 }
 
 .title h2 {
-  z-index: 5;
-  position: relative;
-  font-size: 1.5rem;
+	z-index: 5;
+	position: relative;
+	font-size: 1.5rem;
 }
 
 .tetra {
-  position: absolute;
+	position: absolute;
 }
 
 .frontPageAbout {
-  background-color: var(--medium-blue);
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: left;
-  margin: 100px 0;
-  flex-direction: column;
-  text-align: left;
+	background-color: var(--medium-blue);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: left;
+	margin: 100px 0;
+	flex-direction: column;
+	text-align: left;
 }
 
 .AboutBlurb {
-  margin: 50px;
-  width: 90%;
-  border: 2px solid var(--dark-blue);
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 1.25rem;
-  background-color: var(--light-text);
+	margin: 50px;
+	width: 90%;
+	border: 2px solid var(--dark-blue);
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 1.25rem;
+	background-color: var(--light-text);
 }
 
 .frontPageAbout h3 {
-  font-size: 2.25rem;
-  margin: 50px 0 0 50px;
+	font-size: 2.25rem;
+	margin: 50px 0 0 50px;
 }
 
 .AboutBlurb p {
-  font-size: 1.5rem;
-  text-align: center;
+	font-size: 1.5rem;
+	text-align: center;
 }
 
 .gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
 }
 
 .fishPicture {
-  height: auto;
-  aspect-ratio: 25/20;
+	height: auto;
+	aspect-ratio: 25/20;
 }
 
 .fishCard {
-  height: 240px;
+	height: 240px;
 }
 
 .fishCard h4 {
-  position: relative;
-  top:-50%;
-  text-align: center;
-  color: var(--light-text);
-  font-size: 2rem;
+	position: relative;
+	top: -50%;
+	text-align: center;
+	color: var(--light-text);
+	font-size: 2rem;
 }
 
 .galleryh3 {
-  font-size: 2.5rem;
+	font-size: 2.5rem;
 }
 
 .footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  background-color: var(--dark-blue);
-  color: var(--light-text);
-  font-weight: bold;
-  font-size: 1.4rem;
-  height: 100%;
-  width: 100%;
-  margin-top: 50px;
-  font-size: 1rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: center;
+	background-color: var(--dark-blue);
+	color: var(--light-text);
+	font-weight: bold;
+	font-size: 1.4rem;
+	height: 100%;
+	width: 100%;
+	margin-top: 50px;
+	font-size: 1rem;
 }
 
 .footer h3 {
-  padding: 20px;
-  margin: 0;
-  margin-left: 10px;
-  font-size: 1.5rem;
+	padding: 20px;
+	margin: 0;
+	margin-left: 10px;
+	font-size: 1.5rem;
 }
 
 .footerInfo {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  justify-items: left;
-  align-items: center;
-  line-height: 1.75rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	justify-items: left;
+	align-items: center;
+	line-height: 1.75rem;
 }
 
 .social {
-  margin: 20px;
+	margin: 20px;
 }
 
 .miniNav ul {
-  list-style-type: none;
+	list-style-type: none;
 }
 
 .miniNav li {
-  color: var(--light-text);
-  text-decoration: none;
-  margin: 10px;
+	color: var(--light-text);
+	text-decoration: none;
+	margin: 10px;
 }
 
 .hours {
-  grid-row: 1 / span 2;
-  margin: 20px 40px;
+	grid-row: 1 / span 2;
+	margin: 20px 40px;
 }
 
 .hour {
-  padding: 5px;
+	padding: 5px;
 }
 
 .footerInfo ul {
-  list-style-type: none;
+	list-style-type: none;
 }
 
 .designer {
-  margin: 0;
-  margin-left: 10px;
-  padding: 20px;
+	margin: 0;
+	margin-left: 10px;
+	padding: 20px;
 }
 
 .aboutHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--light-text);
-  color: var(--dark-blue);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--light-text);
+	color: var(--dark-blue);
 }
 
 .aboutHeader h1 {
-  font-size: 4rem;
-  margin: 0 auto;
-  max-width: 40%;
+	font-size: 4rem;
+	margin: 0 auto;
+	max-width: 40%;
 }
 
 .aboutHeader p {
-  max-width: 40%;
-  margin: 0 auto;
-  height: 100px;
+	max-width: 40%;
+	margin: 0 auto;
+	height: 100px;
 }
 
 .about section {
-  padding: 20px;
-  margin: 100px 0;
-  line-height: 2.25rem;
-  font-size: 1.25rem;
+	padding: 20px;
+	margin: 100px 0;
+	line-height: 2.25rem;
+	font-size: 1.25rem;
 }
 
 .whoWeAre {
-  text-align: right;
+	text-align: right;
 }
 
 .whoWeAre p {
-  margin: 20px 0;
+	margin: 20px 0;
 }
 
 .about .mission {
-  max-width: 100%;
-  background-color: var(--button-blue);
-  color: var(--light-text)
+	max-width: 100%;
+	background-color: var(--button-blue);
+	color: var(--light-text);
 }
 
-.about h3, .about p {
-  margin: 20px 5%;
+.about h3,
+.about p {
+	margin: 20px 5%;
 }
 
 .goldfish {
-  width: 90%;
-  height: 800px;
-  margin: 0 5%;
-  border-radius: 25px;
-  object-fit: cover;
+	width: 90%;
+	height: 800px;
+	margin: 0 5%;
+	border-radius: 25px;
+	object-fit: cover;
 }
 
 .whoWeAre {
-  color: var(--dark-blue)
+	color: var(--dark-blue);
 }
 
 .question {
-  height: auto;
-  width: 90%;
-  margin: auto 5%;
-  border: 2px solid var(--button-blue);
-  border-radius: 5px;
-  line-height: 1.5;
-  background-color: var(--light-text);
+	height: auto;
+	width: 90%;
+	margin: auto 5%;
+	border: 2px solid var(--button-blue);
+	border-radius: 5px;
+	line-height: 1.5;
+	background-color: var(--light-text);
 }
 
 .question h2 {
-  background-color: var(--dark-blue);
-  color: var(--light-text);
-  padding: 20px;
-  margin: 0;
+	background-color: var(--dark-blue);
+	color: var(--light-text);
+	padding: 20px;
+	margin: 0;
 }
 
 .question p {
-  padding: 20px;
-  color: var(--dark-blue);
-  margin: 0;
-  font-size: 1.25rem;
-  background-color: white;
+	padding: 20px;
+	color: var(--dark-blue);
+	margin: 0;
+	font-size: 1.25rem;
+	background-color: white;
 }
 
 .faq h1 {
-  margin: 30px 5%;
-  color: var(--dark-blue);
+	margin: 30px 5%;
+	color: var(--dark-blue);
 }
 
 .contactPage {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .contactUs {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  flex-direction: column;
-  height: 400px;
-  width: 45%;
-  border: 2px solid var(--button-blue);
-  border-radius: 5px;
-  margin: 20px;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	flex-direction: column;
+	height: 400px;
+	width: 45%;
+	border: 2px solid var(--button-blue);
+	border-radius: 5px;
+	margin: 20px;
 }
 
 .contactUs h2 {
-  color: var(--dark-blue)
+	color: var(--dark-blue);
 }
 
 .contactUs form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 300px;
-  width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 300px;
+	width: 80%;
 }
 
 .contactUs input {
-  height: 30px;
-  width: 100%;
-  border-radius: 10px;
-  border-color: lightgrey;
-  border-style: solid;
-  padding: 5px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	height: 30px;
+	width: 100%;
+	border-radius: 10px;
+	border-color: lightgrey;
+	border-style: solid;
+	padding: 5px;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.contactUs input::placeholder{
-  color: var(--dark-blue);
+.contactUs input::placeholder {
+	color: var(--dark-blue);
 }
 
 .contactUs textarea {
-  height: 60px;
-  width: 100%;
-  border-radius: 10px;
-  border: 2px solid lightgrey;
-  resize: none;
-  font-size: 15px;
-  padding: 5px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	height: 60px;
+	width: 100%;
+	border-radius: 10px;
+	border: 2px solid lightgrey;
+	resize: none;
+	font-size: 15px;
+	padding: 5px;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .contactUs textarea::placeholder {
-  color: var(--dark-blue);
+	color: var(--dark-blue);
 }
 
 .contactForm button {
-  background-color: var(--button-blue);
-  color: white;
-  font-weight: bold;
-  border-radius: 5px;
-  border: none;
-  padding: 10px;
-  width: 100%;
+	background-color: var(--button-blue);
+	color: white;
+	font-weight: bold;
+	border-radius: 5px;
+	border: none;
+	padding: 10px;
+	width: 100%;
 }
 
 .storeInfo {
-  display: flex;
-  flex-direction: column;
-  height: 400px;
-  width: 45%;
-  border: 2px solid var(--button-blue);
-  border-radius: 5px;
-  margin: 20px;
-  font-weight: bold;
-  color: var(--dark-blue);
+	display: flex;
+	flex-direction: column;
+	height: 400px;
+	width: 45%;
+	border: 2px solid var(--button-blue);
+	border-radius: 5px;
+	margin: 20px;
+	font-weight: bold;
+	color: var(--dark-blue);
 }
 
 .storeInfo h2 {
-  text-align: center;
+	text-align: center;
 }
 
 .storeInfo p {
-  margin: 20px 40px;
+	margin: 20px 40px;
 }
 
 .storeInfo ul {
-  padding: 0;
+	padding: 0;
 }
 
 .storeInfo li {
-  list-style-type: none;
+	list-style-type: none;
 }
