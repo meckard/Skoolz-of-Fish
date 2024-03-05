@@ -198,6 +198,10 @@
 	margin: 20px;
 }
 
+.fbIcon:visited {
+	color: var(--light-text)
+}
+
 .miniNav ul {
 	list-style-type: none;
 }
