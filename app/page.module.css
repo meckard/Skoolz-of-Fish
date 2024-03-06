@@ -9,7 +9,7 @@
 
 .navbar {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	background-color: var(--dark-blue);
 	color: var(--light-text);
 	font-weight: bold;
@@ -125,6 +125,7 @@
 	padding: 10px;
 	font-size: 1.25rem;
 	background-color: var(--light-text);
+	align-self: center;
 }
 
 .frontPageAbout h3 {
@@ -141,6 +142,38 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 20px;
+}
+
+@media screen and (max-width: 900px){
+	.gallery {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.gallery {
+		grid-template-columns: 1fr;
+	}
+
+	.navbar .navElements {
+		flex-direction: column;
+		width: auto;
+		text-align: center;
+	}
+
+	.navbar ul {
+		flex-direction: column;
+		padding: 0;
+	}
+	
+	.navElements svg {
+		margin: 20px 0 0 0;
+	}
+
+	.navbar {
+		height: auto;
+		justify-content: center;
+	}
 }
 
 .fishPicture {
@@ -414,3 +447,5 @@
 .storeInfo li {
 	list-style-type: none;
 }
+
+
