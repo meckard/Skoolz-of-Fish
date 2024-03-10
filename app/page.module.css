@@ -178,6 +178,19 @@
 	.about section {
 		margin: 50px 0;
 	}
+
+	.contactPage {
+		flex-direction: column;
+		width: 90%;
+	}
+
+	.contactPage .contactUs {
+		width: 100%;
+	}
+
+	.contactPage .storeInfo {
+		width: 100%
+	}
 }
 
 .fishPicture {
