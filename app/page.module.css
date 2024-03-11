@@ -7,6 +7,7 @@
 	background-color: var(--dark-blue);
 }
 
+/* nav */
 .navbar {
 	display: flex;
 	justify-content: space-between;
@@ -64,6 +65,8 @@
 	width: 50px;
 }
 
+/* front page */
+
 .main {
 	color: var(--dark-blue);
 	display: flex;
@@ -102,9 +105,7 @@
 	font-size: 1.5rem;
 }
 
-.tetra {
-	position: absolute;
-}
+/* front page about section */
 
 .frontPageAbout {
 	background-color: var(--medium-blue);
@@ -138,59 +139,12 @@
 	text-align: center;
 }
 
+/* front page fish gallery */
+
 .gallery {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 20px;
-}
-
-@media screen and (max-width: 900px){
-	.gallery {
-		grid-template-columns: 1fr 1fr;
-	}
-}
-
-@media screen and (max-width: 600px) {
-	.gallery {
-		grid-template-columns: 1fr;
-	}
-
-	.navbar .navElements {
-		flex-direction: column;
-		width: auto;
-		text-align: center;
-	}
-
-	.navbar ul {
-		flex-direction: column;
-		padding: 0;
-	}
-	
-	.navElements svg {
-		margin: 20px 0 0 0;
-	}
-
-	.navbar {
-		height: auto;
-		justify-content: center;
-	}
-
-	.about section {
-		margin: 50px 0;
-	}
-
-	.contactPage {
-		flex-direction: column;
-		width: 90%;
-	}
-
-	.contactPage .contactUs {
-		width: 100%;
-	}
-
-	.contactPage .storeInfo {
-		width: 100%
-	}
 }
 
 .fishPicture {
@@ -214,73 +168,7 @@
 	font-size: 2.5rem;
 }
 
-.footer {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	justify-items: center;
-	background-color: var(--dark-blue);
-	color: var(--light-text);
-	font-weight: bold;
-	font-size: 1.4rem;
-	height: 100%;
-	width: 100%;
-	margin-top: 50px;
-	font-size: 1rem;
-}
-
-.footer h3 {
-	padding: 20px;
-	margin: 0;
-	margin-left: 10px;
-	font-size: 1.5rem;
-}
-
-.footerInfo {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	justify-items: left;
-	align-items: center;
-	line-height: 1.75rem;
-}
-
-.social {
-	margin: 20px;
-}
-
-.fbIcon:visited {
-	color: var(--light-text)
-}
-
-.miniNav ul {
-	list-style-type: none;
-}
-
-.miniNav li {
-	color: var(--light-text);
-	text-decoration: none;
-	margin: 10px;
-}
-
-.hours {
-	grid-row: 1 / span 2;
-	margin: 20px 40px;
-}
-
-.hour {
-	padding: 5px;
-}
-
-.footerInfo ul {
-	list-style-type: none;
-}
-
-.designer {
-	margin: 0;
-	margin-left: 10px;
-	padding: 20px;
-	font-size: .5rem;
-}
+/* about page */
 
 .aboutHeader {
 	display: flex;
@@ -343,6 +231,8 @@
 	color: var(--dark-blue);
 }
 
+/* FAQ */
+
 .question {
 	height: auto;
 	width: 90%;
@@ -372,6 +262,8 @@
 	margin: 30px 5%;
 	color: var(--dark-blue);
 }
+
+/* contact page */
 
 .contactPage {
 	display: flex;
@@ -467,6 +359,127 @@
 
 .storeInfo li {
 	list-style-type: none;
+}
+
+.hours {
+	grid-row: 1 / span 2;
+	margin: 20px 40px;
+}
+
+.hour {
+	padding: 5px;
+}
+
+/* footer */
+
+.footer {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: center;
+	background-color: var(--dark-blue);
+	color: var(--light-text);
+	font-weight: bold;
+	font-size: 1.4rem;
+	height: 100%;
+	width: 100%;
+	margin-top: 50px;
+	font-size: 1rem;
+}
+
+.footer h3 {
+	padding: 20px;
+	margin: 0;
+	margin-left: 10px;
+	font-size: 1.5rem;
+}
+
+.footerInfo {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	justify-items: left;
+	align-items: center;
+	line-height: 1.75rem;
+}
+
+.social {
+	margin: 20px;
+}
+
+.fbIcon:visited {
+	color: var(--light-text)
+}
+
+.miniNav ul {
+	list-style-type: none;
+}
+
+.miniNav li {
+	color: var(--light-text);
+	text-decoration: none;
+	margin: 10px;
+}
+
+.footerInfo ul {
+	list-style-type: none;
+}
+
+.designer {
+	margin: 0;
+	margin-left: 10px;
+	padding: 20px;
+	font-size: .5rem;
+}
+
+/* media queries */
+
+@media screen and (max-width: 900px){
+	.gallery {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.gallery {
+		grid-template-columns: 1fr;
+	}
+
+	.navbar .navElements {
+		flex-direction: column;
+		width: auto;
+		text-align: center;
+	}
+
+	.navbar ul {
+		flex-direction: column;
+		padding: 0;
+	}
+	
+	.navElements svg {
+		margin: 20px 0 0 0;
+	}
+
+	.navbar {
+		height: auto;
+		justify-content: center;
+	}
+
+	.about section {
+		margin: 50px 0;
+	}
+
+	.contactPage {
+		flex-direction: column;
+		width: 90%;
+	}
+
+	.contactPage .contactUs {
+		width: 100%;
+	}
+
+	.contactPage .storeInfo {
+		width: 100%
+	}
 }
 
 
