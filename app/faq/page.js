@@ -42,7 +42,7 @@ export default function FAQ() {
 			<div className={styles.question}>
 				<h2>Why should I buy from you?</h2>
 				<p>
-					That's a great question!<br/> We all love ordering things online, however
+					That is a great question!<br/> We all love ordering things online, however
 					there is still great value in see what you are buying! Especially when
 					it comes to live animals, seeing what you get and being able to take
 					it home yourself is ideal.<br/> Even more so, you get to benefit from our

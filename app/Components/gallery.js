@@ -12,7 +12,7 @@ export default function FPgallery() {
 			<section className={styles.gallery}>
 				{fishArray.map((fish) => {
 					return (
-						<div className={styles.fishCard}>
+						<div key={fish.name} className={styles.fishCard}>
 							<Image
 								src={fish.picture}
 								height={300}
