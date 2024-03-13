@@ -3,7 +3,17 @@
 import styles from "../page.module.css";
 import { useState } from "react";
 
-export default function Contact() {
+export async function getServerSideProps (context) {
+	const AK = process.env.CONTACT_FROM
+
+	return {
+		props: {
+			AK
+		}
+	}
+}
+
+export default function Contact({ AK }) {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
@@ -24,7 +34,7 @@ export default function Contact() {
 		event.preventDefault();
 		const formData = new FormData(event.target);
 
-		formData.append("access_key", process.env.CONTACT_FROM);
+		formData.append("access_key", AK);
 
 		const object = Object.fromEntries(formData);
 		const json = JSON.stringify(object);
