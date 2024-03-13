@@ -2,18 +2,9 @@
 
 import styles from "../page.module.css";
 import { useState } from "react";
+import { AK } from '../actions'
 
-export async function getServerSideProps (context) {
-	const AK = process.env.CONTACT_FROM
-
-	return {
-		props: {
-			AK
-		}
-	}
-}
-
-export default function Contact({ AK }) {
+export default function Contact() {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
