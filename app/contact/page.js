@@ -1,7 +1,6 @@
 "use client";
 
 import styles from "../page.module.css";
-import { AK } from "../config";
 import { useState } from "react";
 
 export default function Contact() {
@@ -25,7 +24,7 @@ export default function Contact() {
 		event.preventDefault();
 		const formData = new FormData(event.target);
 
-		formData.append("access_key", AK);
+		formData.append("access_key", process.env.CONTACT_FROM);
 
 		const object = Object.fromEntries(formData);
 		const json = JSON.stringify(object);
