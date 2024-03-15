@@ -46,8 +46,8 @@ export default function ContactForm ({ key }) {
 			setMessage("");
 		}
 	}    
-
-<div className={styles.contactUs}>
+return (
+            <div className={styles.contactUs}>
 				<h2>Contact Us</h2>
 				<>
 					<form
@@ -78,5 +78,6 @@ export default function ContactForm ({ key }) {
 					</form>
 				</>
 			</div>
+)
 
 }
