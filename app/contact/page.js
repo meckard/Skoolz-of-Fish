@@ -2,15 +2,7 @@ import styles from "../page.module.css";
 import ContactForm from "../Components/contactForm";
 
 export default function Contact() {
-	async function getServerSideProps(context) {
-		const AK = process.env.CONTACT_FROM;
-
-		return {
-			props: {
-				AK,
-			},
-		};
-	}
+	const AK = process.env.CONTACT_FORM;
 
 	return (
 		<div className={styles.contactPage}>
