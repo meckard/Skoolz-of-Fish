@@ -3,7 +3,7 @@
 import styles from "../page.module.css";
 import { useState } from "react";
 
-export default async function Contact() {
+export default function Contact() {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
