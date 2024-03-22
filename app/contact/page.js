@@ -7,6 +7,7 @@ export default function Contact() {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
+	const [buttonText, setButtonText] = useState("Submit")
 
 	const nameField = (e) => {
 		setName(e.target.value);
@@ -22,6 +23,7 @@ export default function Contact() {
 
 	async function handleSubmit(event) {
 		event.preventDefault();
+		setButtonText("Submitting...")
 		const formData = new FormData(event.target);
 
 		formData.append("access_key", "7f2bf601-e7fe-41b5-bbb1-5ab90bb5e478");
@@ -43,6 +45,7 @@ export default function Contact() {
 			setName("");
 			setEmail("");
 			setMessage("");
+			setButtonText("Submit")
 		}
 	}
 
@@ -75,7 +78,7 @@ export default function Contact() {
 							value={message}
 							name="message"
 						></textarea>
-						<button type="submit">Submit Form</button>
+						<button type="submit">{buttonText}</button>
 					</form>
 				</>
 			</div>
